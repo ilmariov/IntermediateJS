@@ -10,9 +10,7 @@ function sumFibs(num) {
             b2 = fib;
             fib = b1 + b2
         }
-        return arrFibs
-            .filter(int => (int % 2) !== 0)
-            .reduce((a,b) => a + b, 0);
+        return arrFibs.filter(int => (int % 2) !== 0).reduce((a,b) => a + b, 0);
     } else {
         return num;
     }
